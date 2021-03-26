@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box, Link } from '@material-ui/core';
 
 import theme from '../theme';
 
@@ -7,12 +7,16 @@ export const Footer = () => (
   <Box
     component="footer"
     borderTop={1}
-    borderColor={theme.palette.divier}
+    borderColor={theme.palette.divider}
     align="center"
     mt={8}
+    fontSize="caption"
   >
     <p>
-      Done by <a href="https://florentbarriol.com">Florent Barriol</a>.
+      👨‍💻{' '}
+      <Link href="https://florentbarriol.com" target="_blank">
+        florentbarriol.com
+      </Link>
     </p>
   </Box>
 );

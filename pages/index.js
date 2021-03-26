@@ -5,8 +5,7 @@ import { Student } from '../src/components/student.component';
 import { StudentsGrid } from '../src/components/studentGrid.component';
 import { Box, Typography } from '@material-ui/core';
 
-const TITLE = 'Promo développeur.ses avancé.es web et mobile';
-const SUB_TITLE = 'Alternance avril 2021 - avril 2022';
+const TITLE = 'Alternance développement web et mobile avancé';
 
 export default function Home() {
   return (
@@ -17,11 +16,13 @@ export default function Home() {
       </Head>
 
       <Box m={8}>
-        <Typography component="h1" variant="h3" align="center" m={1}>
+        <Typography component="h1" variant="h3" align="center" gutterBottom>
           {TITLE}
         </Typography>
-        <Typography component="h2" variant="h6" align="center" m={2}>
-          {SUB_TITLE}
+        <Typography component="h2" variant="h4" align="center">
+          <i>12 avril 2021 - 8 avril 2022</i>
+          <br />
+          Nos profils encore disponibles
         </Typography>
       </Box>
 
