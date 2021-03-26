@@ -17,19 +17,18 @@ const People = ({ name, github, mail, stack, cv, portrait }) => (
       ))}
     </ul>
     <p>
-      <a href={github}>{github}</a>
+      <a href={github} target="_blank">{github}</a>
     </p>
     <p>
-      <a href={`mailto:${mail}`}>{mail}</a>
+      <a href={`mailto:${mail}`} target="_blank">{mail}</a>
     </p>
-    <a href={cv} className={styles.button}>
+    <a href={cv} className={styles.button} target="_blank" >
       Voir le C.V.
     </a>
   </div>
 );
 
-const TITLE = 'Promo développeur.ses avancé.es web et mobile';
-const SUB_TITLE = 'Alternance avril 2021 - avril 2022';
+const TITLE = 'Alternance développement web et mobile avancé';
 
 export default function Home() {
   return (
@@ -41,7 +40,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>{TITLE}</h1>
-        <h2 className={styles.subtitle}>{SUB_TITLE}</h2>
+        <h2 className={styles.subtitle}><i>12 avril 2021 - 8 avril 2022</i><br/>Nos profils encore disponibles</h2>
 
         {students && students.length ? (
           <div className={styles.grid}>

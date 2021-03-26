@@ -5,4 +5,5 @@ export const ICONS = {
   REACT: 'react',
   SYMFONY: 'symfony',
   NODE: 'node',
+  ANGULAR: 'angular'
 };
